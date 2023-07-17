@@ -1,7 +1,5 @@
-apply plugin: 'java'
-apply plugin: 'application'
-apply plugin: 'java-library'
-mainClassName = "MyFirstProgram"
+ apply plugin: 'java'
+
 
 repositories {
     mavenCentral()
@@ -13,6 +11,9 @@ compileTestJava {
 
 dependencies {
     implementation group: 'org.testng', name: 'testng', version: '7.8.0'
+    implementation group: 'com.codeborne', name: 'selenide', version: '6.16.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.10.0'
+
      testImplementation(
             "com.codeborne:selenide:6.11.2",
             "org.junit.jupiter:junit-jupiter:5.9.2"
