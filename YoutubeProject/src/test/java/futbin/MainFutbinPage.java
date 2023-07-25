@@ -1,3 +1,5 @@
+package futbin;
+
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
@@ -8,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$x;
  */
 
 public class MainFutbinPage {
-  private final SelenideElement signInButton = $x("//li[@class='nav-item pt-1']");
+  private final SelenideElement signInButton = $x("//a[@class=' btn-fb btn-fb-small btn-fb-green waves-effect waves-light']");
 
  public MainFutbinPage(String url){
     Selenide.open(url);

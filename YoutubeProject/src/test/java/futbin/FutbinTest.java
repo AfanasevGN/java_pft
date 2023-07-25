@@ -1,7 +1,9 @@
-import org.junit.Assert;
+package futbin;
+
+import core.BaseTest;
 import org.junit.Test;
 
-public class FutbinTest extends  BaseTest {
+public class FutbinTest extends BaseTest {
   private final static String BASE_URL = "https://futbin.com/";
 
   @Test
